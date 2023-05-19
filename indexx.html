@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build project today</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .leftside{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+      }
+      .rightside{
+        width: 30%;
+        flex-wrap: wrap;
+        display: flex;
+      }
+      .product{
+        background-color: aqua;
+        width: 300px;
+        text-align:center;
+        height: 400px;
+        margin-top: 10px;
+        margin: 20px;
+        border-radius: 20px;
+      }
+      .product img{
+        width: 200px;
+      }
+      .name{
+        font-weight: 600px;
+        font-size: 30px;
+        margin-top: 10px;
+        color: red;
+      }
+      .price{
+        font-weight: 400px;
+        font-size: 20px;
+        margin-top: 10px;
+        color: blue;
+      }
+      .product button{
+        background-color: blueviolet;
+        border: none !important;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow:salmon;
+        color: yellow;
+        font-size: 20px;
+      }
+      /* .product1{
+        background-color: brown;
+        text-align: center;
+        height: 380px;
+        margin-top: 10px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        display: flex; 
+        width: 200px;
+      }
+      .product1 img{
+        width: 200px;
+      }
+      .name1{
+        font-size:30px;
+        font-weight: 300px;
+        margin-top: 10px;
+        color: greenyellow;
+        box-shadow: inset;
+      }
+      .price1{
+        font-size: 20px;
+        font-weight: 300px;
+        margin-top: 10px;
+        color: blueviolet;
+        box-sizing: border-box;
+      }
+       .product1 button{
+        background-color: #FF00FF;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid fuchsia;
+        box-shadow: #FF00FF;
+      }  */
+      .product1{
+        background-color: white;
+        width: 400px;
+        height: 400px;
+        margin:20px ;
+        text-align:center;
+        border-radius: 30px;
+        box-shadow: inset;
+      }
+      .product1 img{
+        width: 300px;
+        margin-top: 20px;
+        height: 200px;
+      }
+      .name1{
+        font-size: 30px;
+        font-weight: 300px;
+        margin: 10px;
+        color:#FFA500;
+        border-radius: 10px;
+      }
+      .price1{
+        font-size: 20px;
+        font-weight: 300px;
+        margin: 10px;
+        color:red;
+      }
+      .product1 button{
+        background-color: #FF00FF;
+        margin: 20px;
+        padding: 10px;
+        border: #FFA500;
+        box-shadow: inset;
+        border-radius: 40px;
+        color:black;
+      }
+      .container2{
+        display: flex;
+      }
+      .leftside2{
+        width: 50%;
+        flex-wrap: wrap;
+      }
+      .rightside2{
+        width: 50%;
+        flex-wrap: wrap;
+      }
+      .location{
+       background-color: #FF00FF;
+       width: 300px;
+       height: 400px;
+       margin: 20px;
+      border-radius: 30px;
+      text-align:center;
+      }
+      .name2{
+        font-size: 40px;
+        font-weight: 300;
+        margin: 5px;
+        color: #FFA500;
+      }
+      .price2{
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px;
+        color: greenyellow;
+      }
+      .location button{
+          background-color: #BD69A0;
+          margin: 10px;
+          padding: 10px;
+          color: white;
+          border: 3px solid white;
+      }
+      .location img{
+          width: 250px;
+          margin: 20px;
+          box-sizing: border-box;
+          box-shadow: inset;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftside">
+          <!-- <div class="product">
+            <img src="1.PNG" alt="">
+            <div class="name">Product Name</div>
+            <div class="price">Product price</div>
+            <button>Add product</button>
+          </div> -->
+          <!-- <div class="product">
+            <img src="" alt="">
+            <div class="name">Product Name</div>
+            <div class="price">Product price</div>
+            <button>Add product</button>
+          </div> -->
+        </div>
+        <div class="rightside">
+             <!-- <div class="product1">
+              <img src="7.PNG" alt="">
+              <div class="name1">Product Name</div>
+              <div class="price1">Product Priceee</div>
+              <button>Add Product</button>
+            </div>  -->
+            <!-- <div class="product1">
+               <img src="" alt="">
+              <div class="name1">Product Name</div>
+              <div class="price1">Product Priceee</div>
+              <button>Add Product</button> 
+            </div> -->
+        </div>
+    </div>
+        <div class="container2">
+          <div class="leftside2">
+            <div class="location">
+              <img src="10.PNG" alt="">
+              <div class="name2">location name</div>
+              <div class="price2">location price</div>
+              <button>Add location</button>
+            </div>
+          </div>
+          <div class="rightside2"></div>
+        </div>
+    <script>
+        let product = document.querySelector(".leftside");
+        let data=[
+          ['1.PNG','Salad','40'],
+          ['2.PNG','Pizza','40'],
+          ['3.PNG','Sub','30'],
+          ['4.PNG','Bigger','30'],
+          ['5.PNG','Spakiti','20'],
+          ['6.PNG','Ber','10']
+        ];
+        for(let i=0;i<data.length;i++){
+          product.innerHTML +=`
+          <div class="product">
+            <img src="${data[i][0]}" alt="">
+            <div class="name">${data[i][1]}</div>
+            <div class="price">$ ${data[i][2]}</div>
+            <button>Add Product</button>
+          </div>
+       `
+        }
+    </script>
+    <script>
+      let product1=document.querySelector(".rightside");
+      let data1=[
+        ['7.PNG','Coca','50'],
+        ['8.PNG','Gandzberg','200'],
+        ['9.PNG','Green Tea','40'],
+      ];
+      for (let i=0; i<data1.length; i++){
+        product1.innerHTML+=`
+        <div class="product1">
+              <img src="${data1[i][0]}" alt="">
+              <div class="name1">${data1[i][1]}</div>
+              <div class="price1">$  ${data1[i][2]}</div>
+              <button>Add Product</button>
+            `
+      }
+    </script>
+</body>
+</html>
